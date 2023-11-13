@@ -699,4 +699,8 @@ function mod.teardown()
   copilot.setup_done = false
 end
 
+function mod.get_context(bufnr)
+    return get_ctx(bufnr)
+end
+
 return mod
