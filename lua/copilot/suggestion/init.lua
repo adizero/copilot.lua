@@ -899,4 +899,8 @@ function M.teardown()
   copilot.setup_done = false
 end
 
+function M.get_context(bufnr)
+    return get_ctx(bufnr)
+end
+
 return M
