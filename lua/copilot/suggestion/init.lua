@@ -919,4 +919,8 @@ function M.get_context(bufnr)
     return get_ctx(bufnr)
 end
 
+function M.should_auto_trigger()
+  return should_auto_trigger()
+end
+
 return M
