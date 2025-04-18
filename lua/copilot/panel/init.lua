@@ -384,7 +384,7 @@ function panel:refresh()
   end
 
   if self.state.req_id then
-    self.client:cancel_request(self.state.req_id)
+    self.client.cancel_request(self.state.req_id)
     self.state.req_id = nil
   end
 

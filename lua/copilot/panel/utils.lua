@@ -15,6 +15,9 @@ end
 
 ---@return string doc_uri
 function M.panel_uri_to_doc_uri(panel_uri)
+  -- local file_uri = panel_uri:gsub("^" .. panel_uri_prefix, "file://")
+  -- local uri = vim.uri_from_fname(vim.uri_to_fname(file_uri))
+  -- return uri
   return panel_uri:gsub("^" .. panel_uri_prefix, "file://")
 end
 
